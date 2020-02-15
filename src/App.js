@@ -6,8 +6,6 @@ import 'semantic-ui-css/semantic.min.css'
 
 import Dashboard from './components/dashboard/dashboard'
 
-
-
 function App() {
   return (
     <Dashboard />
