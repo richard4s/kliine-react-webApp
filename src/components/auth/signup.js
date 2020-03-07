@@ -7,7 +7,7 @@ import '../assets/css/custom.css'
 
 import AuthNav from './authNav'
 
-export default class Login extends Component {
+export default class Signup extends Component {
     constructor(props) {
         super(props)
 
@@ -24,7 +24,7 @@ export default class Login extends Component {
                     <Container>
                         <Row className="justify-content-md-center" align="center">
                             <Col md="auto">
-                                <h2 className="mont-header-font">Welcome back!</h2>
+                                <h2 className="mont-header-font">Let's get started!</h2>
                                 <p className="mont-subhead">You're one step closer to freedom of chores</p>
                             </Col>
                         </Row>
@@ -34,6 +34,17 @@ export default class Login extends Component {
                                 <section className="form-box">
 
                                 <Form>
+                                    <Form.Row >
+                                        <Form.Group className="custom-form-box " as={Col} controlId="formGridFirstName">
+                                            <Form.Label className="custom-label">First Name</Form.Label>
+                                            <Form.Control className="custom-input" type="text"  />
+                                        </Form.Group>
+
+                                        <Form.Group className="custom-form-box" as={Col} controlId="formGridLastName">
+                                            <Form.Label className="custom-label">Last Name</Form.Label>
+                                            <Form.Control className="custom-input" type="text" />
+                                        </Form.Group>
+                                    </Form.Row>
 
                                     <Form.Group className="custom-form-box" as={Col} controlId="formGridEmail">
                                         <Form.Label className="custom-label">Email</Form.Label>
@@ -51,7 +62,7 @@ export default class Login extends Component {
                                     
 
                                     <Button className="signup-btn" variant="light" type="submit" size="lg" block>
-                                        LOG IN
+                                        SIGN UP
                                     </Button>
                                 </Form>
 

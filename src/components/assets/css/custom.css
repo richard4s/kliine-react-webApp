@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+body {
+}
+
+.remove-border-width {
+    background: none;
+}
+
+.ui.vertical.menu .item:before {
+    background: none;
+}
+
+.ui.left.visible.sidebar, .ui.right.visible.sidebar {
+    box-shadow: none;
+}
+
+.ui.menu {
+    border: none;
+}
+
+.ui.segment {
+    box-shadow: none;
+    border: none;
+}
+
+.sidebar-height {
+    height: 100vh;
+}
+
+.icon-align {
+    vertical-align: middle;
+    /* margin-left: 5px; */
+}
+
+.icon-text-align {
+    vertical-align: middle;
+    margin-left: 15px;
+    /* margin-right: 25px; */
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.mont-header-font {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    color: #2D3652;
+}
+
+.mont-subhead {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #2D3652;
+}
+
+.form-box {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.07);
+    border-radius: 11px;
+    margin-top: 50px;
+    padding: 30px 50px;
+}
+
+.custom-form-box {
+    background: #FFFFFF;
+    border: 2px solid #E6DEDE;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 5px 2px;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+.custom-label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    
+    /* Gray */
+    
+    color: #9B9B9B;
+    padding: 10px 0px 10px 10px;
+}
+
+.custom-input {
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    align-items: center;
+
+    color: #2D2D2D;
+    outline: none;
+    outline-width: 0;
+}
+
+input:focus, input.form-control:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.signup-btn {
+    background: #FF743C;
+    box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
+    border-radius: 25px;
+
+    font-family: 'Montserrat';
+    /* font-style: 300; */
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+
+    margin: 30px 0px 15px 0px;
+}
+
+.btn-light:hover {
+    background: #FF743F !important;
+    color: aliceblue;
+}
+
+.small-check {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: right;
+
+    margin: 20px 0px;
+
+    color: #222222;
+}
+
+.link-default {
+    color: #222222;
+}
+
+.link-default:hover {
+    color: #222222;
+    text-decoration: none;
+}
