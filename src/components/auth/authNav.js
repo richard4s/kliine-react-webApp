@@ -17,7 +17,7 @@ export default class AuthNav extends Component {
         return(
             <div>
                 <Navbar bg="light" className="bg-transparent">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                     <img
                         src={Logo}
                         width="150"

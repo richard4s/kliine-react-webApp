@@ -78,7 +78,7 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     margin: 5px 2px;
-    padding-right: 50px;
+    padding-right: 250px;
     padding-left: 10px;
 }
 
@@ -103,6 +103,7 @@ body {
     font-family: 'Montserrat';
     font-size: 14px;
     line-height: 20px;
+    /* width: 150%; */
     /* or 143% */
 
     display: flex;
@@ -162,4 +163,17 @@ input:focus, input.form-control:focus {
 .link-default:hover {
     color: #222222;
     text-decoration: none;
+}
+
+.link-default-colored {
+    color: #FF743C;
+}
+
+.link-default-colored:hover {
+    color: #FF743F;
+    text-decoration: none;
+}
+
+.mont-small {
+    font-size: 12px;
 }

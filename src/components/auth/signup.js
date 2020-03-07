@@ -57,7 +57,7 @@ export default class Signup extends Component {
                                     </Form.Group>
 
                                     <div className="small-check">
-                                        <a className="link-default" href="#">Already have an account? <Icon.ArrowRight color="#FF743C" size={24} /></a>
+                                        <a className="link-default" href="/login">Already have an account? <Icon.ArrowRight color="#FF743C" size={24} /></a>
                                     </div>
                                     
 
