@@ -21,9 +21,8 @@ export default class AuthNav extends Component {
                     <img
                         src={Logo}
                         width="150"
-                        // height="30"
                         className="d-inline-block align-top"
-                        alt="React Bootstrap logo"
+                        alt="Kliine logo"
                     />
                     </Navbar.Brand>
                 </Navbar>

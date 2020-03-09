@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
-import { Image, Grid, Menu, Dropdown, Icon } from 'semantic-ui-react'
 
+import { Navbar, Nav, Image } from 'react-bootstrap'
+
+import * as Icon from 'react-feather'
+
+import '../assets/css/custom.css'
 import Logo from '../assets/images/kliine-default.png'
+import avatar from '../assets/images/photo-of-woman-wearing-headscarf-1820919.jpg'
 
-export default class Navbar extends Component {
+export default class DashboardNavbar extends Component {
     constructor(props) {
         super(props)
 
@@ -12,55 +17,29 @@ export default class Navbar extends Component {
         }
     }
 
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
     render() {
         
-        const { activeItem } = this.state;
-
-        const trigger = (
-            <span>
-              <Icon name='user' /> Hello, Bob
-            </span>
-          )
-
-          const options = [
-            { key: 'profile', text: 'Profile' },
-            { key: 'log-out', text: 'LogOut' },
-          ]
-
         return(
-            <Menu secondary fluid>
-                <Grid centered stretched verticalAlign={'middle'} textAlign={'center'}>
-                    <Grid.Column width={2}>
-                        <Image
-                            alt='Kliine Logo'
-                            size='large'
-                            loading="lazy"
-                            src={Logo}
-                            srcSet={Logo + ' 2x'} 
-                        />
-                    </Grid.Column>
-
-                    <Grid.Column width={6}>
-
-                        <Menu.Item
-                            name='account'
-                            active={activeItem === 'account'}
-                            onClick={this.handleItemClick}
-                        >
-                            <p>Account Overview</p>   
-                        </Menu.Item>
-
-                    </Grid.Column>
-
-                    <Grid.Column width={4}>
-                        <Menu.Menu position='right'>
-                            <Dropdown trigger={trigger} options={options} />
-                        </Menu.Menu>
-                    </Grid.Column>
-                </Grid>
-            </Menu>
+            <Navbar bg="light" expand="lg" className="">
+                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav"> */}
+                        <Navbar.Brand href="/">
+                            <img
+                                src={Logo}
+                                width="150"
+                                className="d-inline-block align-top"
+                                alt="React Bootstrap logo"
+                            />
+                        </Navbar.Brand>
+                    {/* </Navbar.Collapse> */}
+                    <Nav className="mr-auto">
+                    </Nav>
+                    <div inline>
+                        <Image width="50" src={avatar} roundedCircle />
+                        <span className="mont-subhead shift-left">Hi, <span className="colored-text">Oluwatosin</span> <Icon.LogOut color="#FF743C" size={24} /> </span>
+                    </div>
+                
+            </Navbar>
         )
     }
 }

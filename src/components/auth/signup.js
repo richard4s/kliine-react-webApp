@@ -5,16 +5,35 @@ import * as Icon from 'react-feather'
 
 import '../assets/css/custom.css'
 
-import AuthNav from './authNav'
+import AuthNav from '../layouts/authNav'
 
 export default class Signup extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-
+            activeIndex: false
         }
+
+        this.toggleColor = this.toggleColor.bind(this);
     }
+
+    componentDidMount = () => {
+
+    }
+
+    toggleColor = () => {
+        this.setState({
+            activeIndex: !this.state.activeIndex
+        })
+    }
+
+    // selectedColor = () => {
+    //     console.log('Selected')
+    //     this.setState({
+    //         activeIndex: true
+    //     })
+    // }
 
     render() {
         return(
@@ -35,9 +54,9 @@ export default class Signup extends Component {
 
                                 <Form>
                                     <Form.Row >
-                                        <Form.Group className="custom-form-box " as={Col} controlId="formGridFirstName">
+                                        <Form.Group className={ 'custom-form-box' } as={Col} controlId="formGridFirstName">
                                             <Form.Label className="custom-label">First Name</Form.Label>
-                                            <Form.Control className="custom-input" type="text"  />
+                                            <Form.Control className="custom-input " onClick={this.toggleColor} type="text"  />
                                         </Form.Group>
 
                                         <Form.Group className="custom-form-box" as={Col} controlId="formGridLastName">

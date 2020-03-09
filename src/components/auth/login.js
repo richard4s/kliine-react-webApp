@@ -5,7 +5,7 @@ import * as Icon from 'react-feather'
 
 import '../assets/css/custom.css'
 
-import AuthNav from './authNav'
+import AuthNav from '../layouts/authNav'
 
 export default class Login extends Component {
     constructor(props) {

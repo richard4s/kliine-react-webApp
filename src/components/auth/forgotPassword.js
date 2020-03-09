@@ -5,7 +5,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
 import '../assets/css/custom.css'
 
-import AuthNav from './authNav'
+import AuthNav from '../layouts/authNav'
 
 export default class ForgotPassword extends Component {
     constructor(props) {

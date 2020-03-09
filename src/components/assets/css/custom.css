@@ -114,9 +114,23 @@
     outline-width: 0;
 }
 
+.custom-form-box:focus :hover {
+    border: 2px solid rgba(255, 116, 60, 0.56) !important;
+    /* background-color: orange; */
+    outline: rgba(255, 116, 60, 0.56);
+    /* outline-width: 1px; */
+    background: #FFFFFF;
+    /* border: 2px solid #E6DEDE; */
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 5px 2px;
+    padding-right: 250px;
+    padding-left: 10px;
+}
+
 input:focus, input.form-control:focus {
-    outline:none !important;
-    outline-width: 0 !important;
+    outline:none ;
+    outline-width: 0;
     box-shadow: none;
     border: none;
     -moz-box-shadow: none;
@@ -176,4 +190,12 @@ input:focus, input.form-control:focus {
 
 .mont-small {
     font-size: 12px;
+}
+
+.shift-left {
+    margin-left: 15px;
+}
+
+.colored-text {
+    color: #FF743F
 }
