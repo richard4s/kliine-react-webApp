@@ -240,13 +240,5 @@ input:focus, input.form-control:focus {
 }
 
 .badge-warning {
-    background-color: #FFBDA3;
-}
-
-.tint-text-color {
-    color: #FF6A2E;
-}
-
-.shift-down{
-    margin-bottom: 45px;
+    background-color: #FF743F;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-
+// import { Col, Row, Container } from 'react-bootstrap'
 import * as Icon from 'react-feather';
 
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
@@ -105,7 +105,7 @@ export default class SideNavBar extends Component {
                 </NavItem>
                 <NavItem eventKey="mealsMenu">
                     <NavIcon>
-                        <Icon.Clipboard color="#FF743C" size={24} />
+                        <Icon.Database color="#FF743C" size={24} />
                     </NavIcon>
                     <NavText>
                         <span className="mont-subhead colored-text">Meals Menu</span>
@@ -113,18 +113,10 @@ export default class SideNavBar extends Component {
                 </NavItem>
                 <NavItem eventKey="payment">
                     <NavIcon>
-                        <Icon.CreditCard color="#FF743C" size={24} />
+                        <Icon.Database color="#FF743C" size={24} />
                     </NavIcon>
                     <NavText>
                         <span className="mont-subhead colored-text">Payment</span>
-                    </NavText>
-                </NavItem>
-                <NavItem eventKey="chat">
-                    <NavIcon>
-                        <Icon.MessageSquare color="#FF743C" size={24} />
-                    </NavIcon>
-                    <NavText>
-                        <span className="mont-subhead colored-text">Chat</span>
                     </NavText>
                 </NavItem>
             </SideNav.Nav>

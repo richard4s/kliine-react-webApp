@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-
+import { Col, Row, Container } from 'react-bootstrap'
 import * as Icon from 'react-feather';
 
 import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
@@ -61,16 +61,16 @@ export default class SideNavBar extends Component {
             //         </Col>
             //     </Row>
             // </Container>
-        <SideNav expanded={this.state.width <= 990 ? this.state.expanded : !this.state.expanded}
+        <SideNav expanded={this.state.width <= 990 ? !this.state.expanded : this.state.expanded}
             onToggle={(expanded) => {
 
-                // if(this.state.width <= 990) {
-                //     this.setState({
-                //         expanded: !expanded
-                //     })
-                // } else {
+                if(this.state.width <= 990) {
+                    this.setState({
+                        expanded: !expanded
+                    })
+                } else {
                     this.setState({ expanded });
-                // }
+                }
                 
             }}
             onSelect={(selected) => {
@@ -87,45 +87,23 @@ export default class SideNavBar extends Component {
                         <span className="mont-subhead colored-text">Home</span>
                     </NavText>
                 </NavItem>
-                <NavItem eventKey="plans">
+                <NavItem eventKey="charts">
                     <NavIcon>
-                        <Icon.Database color="#FF743C" size={24} />
+                        <i className="fa fa-fw fa-line-chart" style={{ fontSize: '1.75em' }} />
                     </NavIcon>
                     <NavText>
-                        <span className="mont-subhead colored-text">Plans</span>
+                        Charts
                     </NavText>
-                </NavItem>
-                <NavItem eventKey="history">
-                    <NavIcon>
-                        <Icon.Calendar color="#FF743C" size={24} />
-                    </NavIcon>
-                    <NavText>
-                        <span className="mont-subhead colored-text">History</span>
-                    </NavText>
-                </NavItem>
-                <NavItem eventKey="mealsMenu">
-                    <NavIcon>
-                        <Icon.Clipboard color="#FF743C" size={24} />
-                    </NavIcon>
-                    <NavText>
-                        <span className="mont-subhead colored-text">Meals Menu</span>
-                    </NavText>
-                </NavItem>
-                <NavItem eventKey="payment">
-                    <NavIcon>
-                        <Icon.CreditCard color="#FF743C" size={24} />
-                    </NavIcon>
-                    <NavText>
-                        <span className="mont-subhead colored-text">Payment</span>
-                    </NavText>
-                </NavItem>
-                <NavItem eventKey="chat">
-                    <NavIcon>
-                        <Icon.MessageSquare color="#FF743C" size={24} />
-                    </NavIcon>
-                    <NavText>
-                        <span className="mont-subhead colored-text">Chat</span>
-                    </NavText>
+                    <NavItem eventKey="charts/linechart">
+                        <NavText>
+                            Line Chart
+                        </NavText>
+                    </NavItem>
+                    <NavItem eventKey="charts/barchart">
+                        <NavText>
+                            Bar Chart
+                        </NavText>
+                    </NavItem>
                 </NavItem>
             </SideNav.Nav>
         </SideNav>

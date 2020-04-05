@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Col, Row, Container, Card, Badge } from 'react-bootstrap'
+import { Col, Row, Container, Card } from 'react-bootstrap'
 
 import '../assets/css/custom.css'
 
@@ -30,7 +30,7 @@ export default class Dashboard extends Component {
                 <Container >
                     
                     <Row className="justify-content-md-center">
-                        <Col xs="12" lg="12">
+                        <Col xs lg="12">
                             <div className="top-bottom-pad">
                                 <p className="mont-subhead">Actions</p>
                             </div>
@@ -70,7 +70,7 @@ export default class Dashboard extends Component {
                     </Row>
 
                     <Row>
-                        <Col xs="12" lg="12">
+                        <Col xs lg="12">
                             <div className="top-bottom-pad">
                                 <p className="mont-subhead">Active Plans</p>
                             </div>
@@ -78,31 +78,16 @@ export default class Dashboard extends Component {
 
                         <Col xs lg="6">
                             <div className="top-bottom-pad">
-                            <Card style={{ width: '420px', border: 'none' }}>
-                                <Card.Body className="card-plan-push">
+                            <Card style={{ width: '420px', backgroundColor: '#FFBDA3', border: 'none' }}>
+                                <Card.Body className="card-body-push">
                                     <Card.Text>
-                                    <div className="shift-down">
-                                        <Row className="justify-content-md-center">
-                                            <Col xs lg="6">
-                                                House Clean
-                                            </Col>
-                                            <Col md="6">
-                                                <Badge variant="warning"><span className="tint-text-color">Youngin</span></Badge>
-                                            </Col>
-                                        </Row>
-                                        </div>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
                                     <hr />
-                                    <Row className="justify-content-md-center">
-                                            <Col xs lg="6">
-                                                <span className="colored-text">Plan Price </span><br/>
-                                                ₦20,000
-                                            </Col>
-                                            <Col md="6">
-                                                <span className="colored-text">Exp Date</span><br/>
-                                                01/Jan/2020
-                                            </Col>
-                                        </Row>
                                     </Card.Text>
+                                    <div className="to-the-right">
+                                        <Card.Link href="#" ><Icon.ArrowRight color="#FF743C" size={24} /></Card.Link>
+                                    </div>
                                 </Card.Body>
                             </Card>
                             </div>

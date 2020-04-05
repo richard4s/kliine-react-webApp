@@ -238,15 +238,3 @@ input:focus, input.form-control:focus {
 .card-plan-push {
     margin: 20px;
 }
-
-.badge-warning {
-    background-color: #FFBDA3;
-}
-
-.tint-text-color {
-    color: #FF6A2E;
-}
-
-.shift-down{
-    margin-bottom: 45px;
-}

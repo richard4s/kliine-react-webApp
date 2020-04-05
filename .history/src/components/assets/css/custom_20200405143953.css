@@ -201,7 +201,7 @@ input:focus, input.form-control:focus {
 }
 
 .top-bottom-pad {
-    margin: 25px 15px;
+    margin: 30px 15px;
 }
 
 .card-head {
@@ -233,20 +233,4 @@ input:focus, input.form-control:focus {
 
 .bg-tint {
     background-color: #F5F6F7;
-}
-
-.card-plan-push {
-    margin: 20px;
-}
-
-.badge-warning {
-    background-color: #FFBDA3;
-}
-
-.tint-text-color {
-    color: #FF6A2E;
-}
-
-.shift-down{
-    margin-bottom: 45px;
 }

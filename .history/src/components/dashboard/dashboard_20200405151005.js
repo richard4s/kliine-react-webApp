@@ -70,7 +70,7 @@ export default class Dashboard extends Component {
                     </Row>
 
                     <Row>
-                        <Col xs="12" lg="12">
+                        <Col xs lg="12">
                             <div className="top-bottom-pad">
                                 <p className="mont-subhead">Active Plans</p>
                             </div>

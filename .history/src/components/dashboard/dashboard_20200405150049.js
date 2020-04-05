@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Col, Row, Container, Card, Badge } from 'react-bootstrap'
+import { Col, Row, Container, Card } from 'react-bootstrap'
 
 import '../assets/css/custom.css'
 
@@ -30,7 +30,7 @@ export default class Dashboard extends Component {
                 <Container >
                     
                     <Row className="justify-content-md-center">
-                        <Col xs="12" lg="12">
+                        <Col xs lg="12">
                             <div className="top-bottom-pad">
                                 <p className="mont-subhead">Actions</p>
                             </div>
@@ -70,7 +70,7 @@ export default class Dashboard extends Component {
                     </Row>
 
                     <Row>
-                        <Col xs="12" lg="12">
+                        <Col xs lg="12">
                             <div className="top-bottom-pad">
                                 <p className="mont-subhead">Active Plans</p>
                             </div>
@@ -81,24 +81,22 @@ export default class Dashboard extends Component {
                             <Card style={{ width: '420px', border: 'none' }}>
                                 <Card.Body className="card-plan-push">
                                     <Card.Text>
-                                    <div className="shift-down">
                                         <Row className="justify-content-md-center">
                                             <Col xs lg="6">
                                                 House Clean
                                             </Col>
                                             <Col md="6">
-                                                <Badge variant="warning"><span className="tint-text-color">Youngin</span></Badge>
+                                                Youngin
                                             </Col>
                                         </Row>
-                                        </div>
                                     <hr />
                                     <Row className="justify-content-md-center">
                                             <Col xs lg="6">
-                                                <span className="colored-text">Plan Price </span><br/>
+                                                Plan Price <br/>
                                                 ₦20,000
                                             </Col>
                                             <Col md="6">
-                                                <span className="colored-text">Exp Date</span><br/>
+                                                Exp Date<br/>
                                                 01/Jan/2020
                                             </Col>
                                         </Row>
