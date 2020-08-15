@@ -106,7 +106,7 @@ class OurPlans extends Component {
           </Card>
           </div>
       </Col>
-  </Row>
+    </Row>
     }
   }
   class ActivePlans extends Component {
@@ -205,7 +205,7 @@ export default class Plans extends Component {
                         <Col sm={12} lg={12}>
                             <CoolTabs
                                 tabKey={'1'}
-                                style={{ width:  '100%', height:  '100vh'}}
+                                style={{ width:  '100%', height:  '175vh'}}
                                 activeTabStyle={{ background:  '#f8f9fa', color:  '#8AA8C7' , fontWeight: 800, textTransform: 'uppercase'}}
                                 unActiveTabStyle={{ background:  '#f8f9fa', color:  '#0E5092', fontWeight: 800, textTransform: 'uppercase' }}
                                 activeLeftTabBorderBottomStyle={{ background:  '#0E5092', height:  2,  }}

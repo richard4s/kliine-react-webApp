@@ -12,6 +12,8 @@ import SideNav from '../layouts/sidebar'
 
 import SVG1 from '../assets/images/svg1.svg'
 import SVG2 from '../assets/images/svg2.svg'
+import SVG3 from '../assets/images/svg3.svg'
+import SVG4 from '../assets/images/svg4.svg'
 
 class OurPlans extends Component {
     render() {
@@ -41,7 +43,7 @@ class OurPlans extends Component {
 
       <Col xs lg="6">
           <div className="top-bottom-pad">
-          <Card style={{ width: '420px', backgroundColor: '#FFBDA3', border: 'none' }}>
+          <Card style={{ width: '420px', backgroundColor: '#BDCBF9', border: 'none' }}>
               <Card.Body >
                   <Card.Text className="mont-card-header">
                     <Row>
@@ -60,7 +62,51 @@ class OurPlans extends Component {
           </Card>
           </div>
       </Col>
-  </Row>
+
+      <Col xs lg="6">
+          <div className="top-bottom-pad">
+          <Card style={{ width: '420px', backgroundColor: '#6ED47C', border: 'none' }}>
+              <Card.Body >
+                  <Card.Text className="mont-card-header">
+                    <Row>
+                        <Col xs lg="6">
+                            KLIINE <br />30,000.00
+                        </Col>
+                        <Col xs lg="6">
+                            <Image src={SVG3}  />
+                        </Col>
+                        <Col xs lg="6">
+                            SUBSCRIBE
+                        </Col>
+                    </Row>
+                  </Card.Text>
+              </Card.Body>
+          </Card>
+          </div>
+      </Col>
+
+      <Col xs lg="6">
+          <div className="top-bottom-pad">
+          <Card style={{ width: '420px', backgroundColor: '#BDCBF9', border: 'none' }}>
+              <Card.Body >
+                  <Card.Text className="mont-card-header">
+                    <Row>
+                        <Col xs lg="6">
+                            KLIINE PLUS <br />50,000.00
+                        </Col>
+                        <Col xs lg="6">
+                            <Image src={SVG4}  />
+                        </Col>
+                        <Col xs lg="6">
+                            SUBSCRIBE
+                        </Col>
+                    </Row>
+                  </Card.Text>
+              </Card.Body>
+          </Card>
+          </div>
+      </Col>
+    </Row>
     }
   }
   class ActivePlans extends Component {
@@ -159,7 +205,7 @@ export default class Plans extends Component {
                         <Col sm={12} lg={12}>
                             <CoolTabs
                                 tabKey={'1'}
-                                style={{ width:  '100%', height:  '100vh'}}
+                                style={{ width:  '100%', height:  '175vh'}}
                                 activeTabStyle={{ background:  '#f8f9fa', color:  '#8AA8C7' , fontWeight: 800, textTransform: 'uppercase'}}
                                 unActiveTabStyle={{ background:  '#f8f9fa', color:  '#0E5092', fontWeight: 800, textTransform: 'uppercase' }}
                                 activeLeftTabBorderBottomStyle={{ background:  '#0E5092', height:  2,  }}

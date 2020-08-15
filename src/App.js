@@ -18,6 +18,9 @@ import ForgotPassword from './components/auth/forgotPassword'
 
 import Plans from './components/dashboard/plans'
 
+// import { createStore, combineReducers } from "redux";
+// import { Provider, connect } from 'react-redux';
+
 class App extends Component {
   render() {
     return (

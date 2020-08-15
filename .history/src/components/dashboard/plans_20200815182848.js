@@ -8,9 +8,12 @@ import CoolTabs from 'react-cool-tabs';
 import Navbar from '../layouts/navbar'
 import SideNav from '../layouts/sidebar'
 
-import * as Icon from 'react-feather';
+// import * as Icon from 'react-feather';
 
 import SVG1 from '../assets/images/svg1.svg'
+import SVG2 from '../assets/images/svg2.svg'
+import SVG3 from '../assets/images/svg3.svg'
+import SVG4 from '../assets/images/svg4.svg'
 
 class OurPlans extends Component {
     render() {
@@ -41,19 +44,69 @@ class OurPlans extends Component {
       <Col xs lg="6">
           <div className="top-bottom-pad">
           <Card style={{ width: '420px', backgroundColor: '#BDCBF9', border: 'none' }}>
-              <Card.Body className="card-body-push">
-                  <Card.Title className="mont-header-font">CUSTOM <br />PLANS</Card.Title>
-                  <Card.Text>
-                      You have the power to create plans 100 <br />different ways to suit your needs.
+              <Card.Body >
+                  <Card.Text className="mont-card-header">
+                    <Row>
+                        <Col xs lg="6">
+                            STANDARD <br />27,000.00
+                        </Col>
+                        <Col xs lg="6">
+                            <Image src={SVG2}  />
+                        </Col>
+                        <Col xs lg="6">
+                            SUBSCRIBE
+                        </Col>
+                    </Row>
                   </Card.Text>
-                  <div className="to-the-right">
-                      <Card.Link href="#" ><Icon.ArrowRight color="#FF743C" size={24} /></Card.Link>
-                  </div>
               </Card.Body>
           </Card>
           </div>
       </Col>
-  </Row>
+
+      <Col xs lg="6">
+          <div className="top-bottom-pad">
+          <Card style={{ width: '420px', backgroundColor: '#6ED47C', border: 'none' }}>
+              <Card.Body >
+                  <Card.Text className="mont-card-header">
+                    <Row>
+                        <Col xs lg="6">
+                            KLIINE <br />30,000.00
+                        </Col>
+                        <Col xs lg="6">
+                            <Image src={SVG3}  />
+                        </Col>
+                        <Col xs lg="6">
+                            SUBSCRIBE
+                        </Col>
+                    </Row>
+                  </Card.Text>
+              </Card.Body>
+          </Card>
+          </div>
+      </Col>
+
+      <Col xs lg="6">
+          <div className="top-bottom-pad">
+          <Card style={{ width: '420px', backgroundColor: '#BDCBF9', border: 'none' }}>
+              <Card.Body >
+                  <Card.Text className="mont-card-header">
+                    <Row>
+                        <Col xs lg="6">
+                            KLIINE PLUS <br />50,000.00
+                        </Col>
+                        <Col xs lg="6">
+                            <Image src={SVG4}  />
+                        </Col>
+                        <Col xs lg="6">
+                            SUBSCRIBE
+                        </Col>
+                    </Row>
+                  </Card.Text>
+              </Card.Body>
+          </Card>
+          </div>
+      </Col>
+    </Row>
     }
   }
   class ActivePlans extends Component {
@@ -152,7 +205,7 @@ export default class Plans extends Component {
                         <Col sm={12} lg={12}>
                             <CoolTabs
                                 tabKey={'1'}
-                                style={{ width:  '100%', height:  '100vh'}}
+                                style={{ width:  '100%', height:  '180vh'}}
                                 activeTabStyle={{ background:  '#f8f9fa', color:  '#8AA8C7' , fontWeight: 800, textTransform: 'uppercase'}}
                                 unActiveTabStyle={{ background:  '#f8f9fa', color:  '#0E5092', fontWeight: 800, textTransform: 'uppercase' }}
                                 activeLeftTabBorderBottomStyle={{ background:  '#0E5092', height:  2,  }}
